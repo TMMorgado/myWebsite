@@ -55,24 +55,6 @@ body {
   min-height: 100%;
 }
 
-/* Dark theme (when checked) */
-#theme-toggle:checked ~ .page {
-  color-scheme: dark;
-
-  --bg: #070a12;
-  --surface: rgba(255, 255, 255, 0.06);
-  --surface-2: rgba(255, 255, 255, 0.10);
-  --border: rgba(255, 255, 255, 0.12);
-
-  --text: rgba(255, 255, 255, 0.94);
-  --muted: rgba(255, 255, 255, 0.70);
-
-  background:
-    radial-gradient(900px 600px at 10% 10%, rgba(124,58,237,0.22), transparent 60%),
-    radial-gradient(700px 500px at 90% 20%, rgba(34,197,94,0.12), transparent 55%),
-    radial-gradient(600px 420px at 40% 90%, rgba(59,130,246,0.12), transparent 60%),
-    #070a12;
-}
 
 /* Text colors */
 .page, .page a { color: var(--text); }
@@ -211,7 +193,18 @@ p { margin: 0 0 1rem 0; }
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
+ 
 }
+.whatsappIcon{
+  background-image: url('assets/images/whatsapp.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+  
+
 
 /* Mobile menu (checkbox hack) */
 .hamburger {
@@ -319,6 +312,10 @@ p { margin: 0 0 1rem 0; }
   box-shadow: var(--shadow-soft);
 }
 
+.contact-card{
+margin-top: 40px;
+
+}
 .divider {
   height: 1px;
   background: var(--border);
@@ -560,7 +557,7 @@ align-items: center;
 
 .imageAbout{
  
-  background-image: url('/008.1\ \(1\).jpg');
+  background-image: url('assets/images/008.1\ \(1\).jpg');
   min-width: 400px;
   height: 200px;
   background-repeat: no-repeat;
@@ -840,6 +837,42 @@ textarea { resize: vertical; }
   color: var(--muted);
 }
 .footer-links a:hover { color: var(--text); text-decoration: underline; }
+
+.linkedinIcon{
+background-image: url('assets/images/linkedin.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 20px;
+height: 20px;
+}
+.emailIcon{
+  background-image: url('assets/images/gmail.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 20px;
+height: 20px;
+}
+.whatsappIcon2{
+  background-image: url('assets/images/whatsapp.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+.githubIcon{
+ background-image: url('assets/images/github.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+
 
 /* =========================
    Helpers
